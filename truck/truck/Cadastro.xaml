@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="truck.Cadastro" Title="CADASTRAR MUDANÇA">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DarkBlue" Padding="35">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Origem" HorizontalOptions="FillAndExpand" TextColor="white"/>
+                <Label Text="Destino" HorizontalOptions="FillAndExpand" TextColor="white"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="" x:Name="origem_cad" PlaceholderColor="White" Placeholder="Digite a cidade" HorizontalOptions="FillAndExpand" TextColor="White"/>
+                <Entry Text="" x:Name="destino_cad" PlaceholderColor="White" Placeholder="Digite a cidade" HorizontalOptions="FillAndExpand" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data" HorizontalOptions="FillAndExpand" TextColor="white"/>
+                <Label Text="Hora" HorizontalOptions="FillAndExpand" TextColor="white"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <DatePicker MinimumDate="1/1/2018" MaximumDate="1/1/2030" x:Name="data_cad"  HorizontalOptions="FillAndExpand" TextColor="white"/>
+                <TimePicker x:Name="hora_cad" HorizontalOptions="FillAndExpand" TextColor="white"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Quantidade aproximada de moveis" HorizontalOptions="FillAndExpand" TextColor="white"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sala" HorizontalOptions="FillAndExpand" WidthRequest="100" TextColor="white"/>
+                <Picker Title="Selecionar" x:Name="qtd_sala_cad" WidthRequest="100"  HorizontalOptions="FillAndExpand"   TextColor="White">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Cozinha" HorizontalOptions="FillAndExpand" WidthRequest="100" TextColor="white"/>
+                <Picker Title="Selecionar" x:Name="qtd_cozinha_cad" WidthRequest="100" HorizontalOptions="FillAndExpand"   TextColor="White">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Dormitório" HorizontalOptions="FillAndExpand" WidthRequest="100" TextColor="white"/>
+                <Picker Title="Selecionar" x:Name="qtd_dormitorio_cad" WidthRequest="100" HorizontalOptions="FillAndExpand"   TextColor="White">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Lavanderia" HorizontalOptions="FillAndExpand" WidthRequest="100" TextColor="white"/>
+                <Picker Title="Selecionar" x:Name="qtd_lavanderia"  WidthRequest="100" HorizontalOptions="FillAndExpand"   TextColor="White">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Outros" HorizontalOptions="FillAndExpand" WidthRequest="100" TextColor="white"/>
+                <Picker Title="Selecionar" x:Name="qtd_outros_cad"  WidthRequest="100" HorizontalOptions="FillAndExpand"  TextColor="White">
+                    <Picker.ItemsSource >
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cadastrar" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

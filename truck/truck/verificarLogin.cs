@@ -19,7 +19,7 @@ namespace truck
                 string Conteudo = wc.DownloadString(NovoEnderecoUrl);
                 Login end =
                 JsonConvert.DeserializeObject<Login>(Conteudo);
-                if (String.IsNullOrEmpty(end.autorizar))
+                if (String.IsNullOrEmpty(end.Autorizar))
                     return null;
                 return end;
             }

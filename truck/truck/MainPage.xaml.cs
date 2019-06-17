@@ -22,7 +22,8 @@ namespace truck
 
 
             Login end = verificarLogin.VerificarAutorizacao(nome.Text, senha.Text);
-            if (end != null)
+            int vard = Convert.ToInt32(end.Autorizar);
+            if (vard == 1)
             {
                 await DisplayAlert("Alert", "Login efetuado com sucesso!.", "OK");
                 await Navigation.PushAsync(new Cadastro());

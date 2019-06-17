@@ -6,6 +6,6 @@ namespace truck.Model
 {
     class Login
     {
-        public String autorizar { get; set; }
+        public String Autorizar { get; set; }
     }
 }

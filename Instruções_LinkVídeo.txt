@@ -1,0 +1,11 @@
+Link do vídeo: https://youtu.be/kzwvB0TbKeQ
+
+Api rest:
+
+- http://apirest.srirosario.com.br/login/megarog4/102030
+usuario: megarog4	/ 	senha:102030
+
+- http://apirest.srirosario.com.br/usuarios/2
+
+Professor estava tentando enviar as alterações via PUT com RestSharp, mas ainda não consegui.
+Pelo pronto está logando e mostrando os dados que vem da base de dados.

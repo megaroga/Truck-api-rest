@@ -27,4 +27,25 @@ namespace truck
             { return null; }
         }
     }
+
+    class pegarDados
+    {
+        private static string EnderecoUrl = "http://apirest.srirosario.com.br/usuarios/{0}";
+        public static Dados VerUsuario(int code)
+        {
+            string NvUs = string.Format(EnderecoUrl, code);
+            WebClient wc = new WebClient();
+            try
+            {
+                string Coontent = wc.DownloadString(NvUs);
+                Dados dadosus =
+                JsonConvert.DeserializeObject<Dados>(Coontent);
+                if (String.IsNullOrEmpty(dadosus.nome))
+                    return null;
+                return dadosus;
+            }
+            catch (Exception)
+            { return null; }
+        }
+    }
 }
